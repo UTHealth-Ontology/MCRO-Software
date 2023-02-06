@@ -16,7 +16,7 @@ Amith, M.T., Cui, L., Zhi, D. et al. Toward a standard formal semantic represent
 
 ## Build instructions
 
-The library and the sample application was developed in Netbeans 16. Through Netbeans, you can File > Open Project and select the mco-java folder and/or the mco-java-app. Select the parent node of the project and use the "Clean and Build" button (or through the Run menu). 
+The library and the sample application was developed in Netbeans 16 with Java 11. Through Netbeans, you can File > Open Project and select the mco-java folder and/or the mco-java-app. Select the parent node of the project and use the "Clean and Build" button (or through the Run menu). 
 
 Note that mco-java-app has a dependency on the library (mco-java), so you'll have to build the library first in order to build the sample software application.
 
