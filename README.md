@@ -6,7 +6,7 @@ This repository contains an experimental Java library to manage and generate dat
 ### Java library (mco-java)
 https://github.com/UTHealth-Ontology/MCRO-Software/tree/main/mco-java
 
-### Sample application utilizing the library
+### Sample application utilizing the library (mco-java-app)
 https://github.com/UTHealth-Ontology/MCRO-Software/tree/main/mco-java-app
 
 
