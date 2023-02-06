@@ -69,7 +69,7 @@ public class McoApp extends javax.swing.JFrame {
         deleteTablePopup = new javax.swing.JMenuItem();
         editTablePopup = new javax.swing.JMenuItem();
         tabPanel = new javax.swing.JTabbedPane();
-        ViewerPanel = new javax.swing.JPanel();
+        AuthoringPanel = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
         tblEncoded = new javax.swing.JTable();
         jLabel1 = new javax.swing.JLabel();
@@ -92,7 +92,6 @@ public class McoApp extends javax.swing.JFrame {
         rbLicenses = new javax.swing.JRadioButton();
         btnClearItem = new javax.swing.JButton();
         rbMisc_doc_parts = new javax.swing.JRadioButton();
-        CreatorPanel = new javax.swing.JPanel();
 
         deleteTablePopup.setText("Delete");
         tablePopup.add(deleteTablePopup);
@@ -101,7 +100,7 @@ public class McoApp extends javax.swing.JFrame {
         tablePopup.add(editTablePopup);
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("MCO Demo App Prototype");
+        setTitle("MCRO Demo App Prototype");
         addWindowListener(new java.awt.event.WindowAdapter() {
             public void windowOpened(java.awt.event.WindowEvent evt) {
                 onWindowOpened(evt);
@@ -233,45 +232,45 @@ public class McoApp extends javax.swing.JFrame {
             }
         });
 
-        javax.swing.GroupLayout ViewerPanelLayout = new javax.swing.GroupLayout(ViewerPanel);
-        ViewerPanel.setLayout(ViewerPanelLayout);
-        ViewerPanelLayout.setHorizontalGroup(
-            ViewerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        javax.swing.GroupLayout AuthoringPanelLayout = new javax.swing.GroupLayout(AuthoringPanel);
+        AuthoringPanel.setLayout(AuthoringPanelLayout);
+        AuthoringPanelLayout.setHorizontalGroup(
+            AuthoringPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jSeparator1)
-            .addGroup(ViewerPanelLayout.createSequentialGroup()
+            .addGroup(AuthoringPanelLayout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(ViewerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, ViewerPanelLayout.createSequentialGroup()
-                        .addGroup(ViewerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                .addGroup(AuthoringPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, AuthoringPanelLayout.createSequentialGroup()
+                        .addGroup(AuthoringPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(statusPanel, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(jScrollPane1, javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jScrollPane2, javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(ViewerPanelLayout.createSequentialGroup()
-                                .addGroup(ViewerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(AuthoringPanelLayout.createSequentialGroup()
+                                .addGroup(AuthoringPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 538, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGroup(ViewerPanelLayout.createSequentialGroup()
+                                    .addGroup(AuthoringPanelLayout.createSequentialGroup()
                                         .addComponent(cbAnnotations, javax.swing.GroupLayout.PREFERRED_SIZE, 359, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                         .addComponent(btnAnnotate)))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(lblToolText, javax.swing.GroupLayout.DEFAULT_SIZE, 504, Short.MAX_VALUE))
-                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, ViewerPanelLayout.createSequentialGroup()
-                                .addGroup(ViewerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, AuthoringPanelLayout.createSequentialGroup()
+                                .addGroup(AuthoringPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                                     .addComponent(jLabel1, javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(jLabel2, javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, ViewerPanelLayout.createSequentialGroup()
+                                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, AuthoringPanelLayout.createSequentialGroup()
                                         .addComponent(btnClearItem)
                                         .addGap(18, 18, 18)
                                         .addComponent(btnEncode)))
                                 .addGap(0, 0, Short.MAX_VALUE)))
                         .addContainerGap())
-                    .addGroup(ViewerPanelLayout.createSequentialGroup()
-                        .addGroup(ViewerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(ViewerPanelLayout.createSequentialGroup()
+                    .addGroup(AuthoringPanelLayout.createSequentialGroup()
+                        .addGroup(AuthoringPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(AuthoringPanelLayout.createSequentialGroup()
                                 .addComponent(btnDelete)
                                 .addGap(45, 45, 45)
                                 .addComponent(btnExport))
-                            .addGroup(ViewerPanelLayout.createSequentialGroup()
+                            .addGroup(AuthoringPanelLayout.createSequentialGroup()
                                 .addComponent(rbModelCardConcepts)
                                 .addGap(18, 18, 18)
                                 .addComponent(rbAlgorithm)
@@ -281,9 +280,9 @@ public class McoApp extends javax.swing.JFrame {
                                 .addComponent(rbMisc_doc_parts)))
                         .addGap(0, 577, Short.MAX_VALUE))))
         );
-        ViewerPanelLayout.setVerticalGroup(
-            ViewerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, ViewerPanelLayout.createSequentialGroup()
+        AuthoringPanelLayout.setVerticalGroup(
+            AuthoringPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, AuthoringPanelLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -291,27 +290,27 @@ public class McoApp extends javax.swing.JFrame {
                 .addGap(14, 14, 14)
                 .addComponent(jLabel2)
                 .addGap(1, 1, 1)
-                .addGroup(ViewerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGroup(AuthoringPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(rbModelCardConcepts)
                     .addComponent(rbAlgorithm)
                     .addComponent(rbLicenses)
                     .addComponent(rbMisc_doc_parts))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(ViewerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGroup(AuthoringPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(cbAnnotations, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btnAnnotate))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(ViewerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                .addGroup(AuthoringPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(lblToolText)
                     .addComponent(jScrollPane3, javax.swing.GroupLayout.DEFAULT_SIZE, 206, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(ViewerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGroup(AuthoringPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnEncode)
                     .addComponent(btnClearItem))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(ViewerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGroup(AuthoringPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnDelete)
                     .addComponent(btnExport))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -321,20 +320,7 @@ public class McoApp extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        tabPanel.addTab("Authoring", ViewerPanel);
-
-        javax.swing.GroupLayout CreatorPanelLayout = new javax.swing.GroupLayout(CreatorPanel);
-        CreatorPanel.setLayout(CreatorPanelLayout);
-        CreatorPanelLayout.setHorizontalGroup(
-            CreatorPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1060, Short.MAX_VALUE)
-        );
-        CreatorPanelLayout.setVerticalGroup(
-            CreatorPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 874, Short.MAX_VALUE)
-        );
-
-        tabPanel.addTab("Viewing", CreatorPanel);
+        tabPanel.addTab("Authoring", AuthoringPanel);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -742,8 +728,7 @@ public class McoApp extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JPanel CreatorPanel;
-    private javax.swing.JPanel ViewerPanel;
+    private javax.swing.JPanel AuthoringPanel;
     private javax.swing.ButtonGroup annotationGroup;
     private javax.swing.JButton btnAnnotate;
     private javax.swing.JButton btnClearItem;
