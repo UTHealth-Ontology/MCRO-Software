@@ -6,5 +6,5 @@ MCRO Java library (mco-java.jar) provides some functionality to manage model car
 
 ## Build instructions
 
-The library and the sample application was developed in Netbeans 16 with Java 11. Through Netbeans, you can File > Open Project and select the mco-java folder. Select the parent node of the project and use the "Clean and Build" button (or through the Run menu). 
+The library and the sample application was developed in [Netbeans 16](https://netbeans.apache.org/) with Java 11. Through Netbeans, you can File > Open Project and select the mco-java folder. Select the parent node of the project and use the "Clean and Build" button (or through the Run menu). 
 
